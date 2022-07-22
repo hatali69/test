@@ -1,0 +1,35 @@
+@charset "utf-8";
+* { margin: 0; padding: 0;}
+body { font-family: "맑은 고딕"; font-size: 16px; color: #333;}
+img { vertical-align: middle;}
+li { list-style: none;}
+a { text-decoration: none;}
+.clearfix:after { content: ""; display: block; clear: both } /* 최신 유행. 효율적 */
+
+#box1 { width: 800px; margin: 100px auto; background: #000; color: #fff;}
+/* #box1 p:nth-child(1) { background: #9f3;} p:nth-child(1):h1 p로 했을때(구조로 안묵여줬을때)는 인식안됨(일종의 버그) -> 구조화(상위 div 걸어줌)하거나 class 부여  */
+#box1 .inner p:nth-child(1) {background: #9f3; opacity: 0.9; border-radius: 20px;} /* background:블럭요소전체 투명도 */
+#box1 .inner p:nth-child(2) {background: #9f3; opacity: 0.5; border-radius: 50%;}
+#box1 .inner p:nth-child(3) {background: #9f3; opacity: 0.8; border-radius: 60px 60px 60px 0;} /* 4ea : 왼쪽 상단 기준 */
+
+#box2 { width: 1000px;  margin: 200px auto; background: rgba(102,051,000,1); color: rgba(255,255,255,1);}
+#box2 .inner p:nth-child(1) {background: rgba(153,255,051,0.9);} /* rgba:배경색상에만 투명도 */
+#box2 .inner p:nth-child(2) {background: rgba(153,255,051,0.5);}
+#box2 .inner p:nth-child(3) {background: rgba(153,255,051,0.1);}
+
+.inner { margin-top: 50px;}
+.inner p { width: 200px; height: 200px; }
+
+#box3 { width: 1000px; margin: 100px auto; border: 1px solid #000; padding: 20px; box-sizing: border-box;}
+#box3 .inner div { margin-bottom: 30px; background: #cff; font-size: 20px;}
+#box3 .inner div:nth-child(1) { width: 300px; height: 300px; line-height: 300px; border-radius: 50%; text-align: center; }
+#box3 .inner div:nth-child(2) { width: 400px; height: 60px; line-height: 60px; border-radius: 30px;}
+#box3 .inner div:nth-child(3) { width: 400px; height: 100px; border-radius: 28px; box-sizing: border-box; padding-top: 20px;}
+.sh01 { font-weight: bold; text-shadow: 2px 2px 0 #f00; color: #fff;}
+.sh02 { width: 200px; height: 80px; box-shadow: 10px -10px 0 #36c;}
+
+#box4 { width: 100px; margin: 100px auto;}
+#box4 li { margin-bottom: 80px; height: 100px;}
+#box4 li:nth-child(1) { background: linear-gradient(-45deg, #fcc, #f33);}
+#box4 li:nth-child(2) { background: linear-gradient(180deg, rgba(102,153,255,1), rgba(102,153,255,0.3));}
+#box4 li:nth-child(3) { background: radial-gradient( #30cfd0, #330867);}

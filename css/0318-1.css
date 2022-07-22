@@ -1,0 +1,16 @@
+@charset "utf-8";
+* { margin: 0; padding: 0;}
+body { font-family: "맑은 고딕"; font-size: 16px; color: #333;}
+img { vertical-align: middle;}
+li { list-style: none;}
+a { text-decoration: none;}
+.clearfix:after { content: ""; display: block; clear: both } /* 최신 유행. 효율적 */
+.inner { width: 1100px; margin: 0 auto;}
+
+#box1 {background: #99f; width: 800px; height: 500px; float: right;}
+/* #box1:after { content: ""; display: block; clear: both;} clear의 정석(항목별 선언)인데(아래 항목 clear매번해주는 불편) 비추 -> 상위 clearfix로 전체 적용(다음요소에 방해 안됨 */
+#box2 {background: #ff3; width: 800px; margin: 100px auto; padding: 50px 0;} /* padding: 50px 0: line-height와 동일 효과 */
+#box3 {background: #fc3; width: 800px; margin: 100px auto; padding: 80px 100px;} /* padding값이 실제 사이즈에 영향 미침 */
+#box4 {background: #cff; width: 800px; margin: 100px auto; padding: 50px 100px; box-sizing: border-box;} /* border-box: padding값이 실제 사이즈에 영향 안 미침 : 모바일 때문에(기기마다 화면 사이즈 다르기 때문) */
+#box5 {background: #f69; width: 700px; margin: 100px auto; height: 100px; line-height: 100px; padding-left: 100px;} /* 너비 800px , 높이는 정확이 맞출필요는 없음. 웹은 가로 맞춤은 중요하나 세로는 적당히 해도 무관. line-height: text 세로중간배치.  게임은 가로세로 정확히 맞춤 필요 */
+/* #box5 h1 { margin-left: 100px;} */

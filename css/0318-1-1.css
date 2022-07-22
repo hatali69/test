@@ -1,0 +1,14 @@
+@charset "utf-8";
+* { margin: 0; padding: 0;}
+body { font-family: "맑은 고딕"; font-size: 16px; color: #333;}
+img { vertical-align: middle;}
+li { list-style: none;}
+a { text-decoration: none;}
+.clearfix:after { content: ""; display: block; clear: both } /* 최신 유행. 효율적 */
+.inner { width: 1100px; margin: 0 auto;}
+
+#box1 {background: #99f; float: right; height: 300px; width: 800px;}
+#box2 {background: #ff3; margin: 100px auto; width: 800px; padding: 50px 0;}
+#box3 {background: #fc3; margin: 100px auto; width: 800px; padding: 50px 100px;}
+#box4 {background: #cff; margin: 100px auto; width: 800px; padding: 50px 100px; box-sizing: border-box;}
+#box5 {background: #f69; margin: 100px auto; width: 700px; height: 100px; line-height: 100px; padding-left: 100px;}
